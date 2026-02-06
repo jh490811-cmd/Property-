@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>샘플 아파트 신규분양</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      background: #f9fafb;
+      color: #111827;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    section {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    h1 { font-size: 32px; margin-bottom: 8px; }
+    h2 { font-size: 22px; margin-bottom: 12px; }
+    p { line-height: 1.6; }
+    .btns a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .primary { background: #111827; color: white; }
+    .ghost { border: 1px solid #e5e7eb; color: #111827; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      opacity: 0.6;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <section>
+      <h1>샘플 아파트 신규분양</h1>
+      <p>역세권 · 학군 · 대단지 프리미엄 라이프</p>
+
+      <div class="btns">
+        <a href="#contact" class="primary">관심고객 등록</a>
+        <a href="tel:021234567" class="ghost">전화 문의</a>
+        <a href="mailto:test@example.com" class="ghost">이메일</a>
+        <a href="https://pf.kakao.com" class="ghost">카카오 문의</a>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section>
+      <h2>핵심 포인트</h2>
+      <div class="grid">
+        <div class="card">✔ 역세권 입지</div>
+        <div class="card">✔ 명문 학군</div>
+        <div class="card">✔ 대단지 설계</div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section>
+      <h2>단지 개요</h2>
+      <p><b>위치</b> : 서울시 ○○구 ○○동</p>
+      <p><b>문의</b> : 02-123-4567 / test@example.com</p>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section>
+      <h2>청약 일정</h2>
+      <ul>
+        <li>특별공급 : 2026-03-10</li>
+        <li>1순위 : 2026-03-11</li>
+        <li>당첨자 발표 : 2026-03-18</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>관심고객 등록</h2>
+      <p>전화 / 이메일 / 카카오 중 편한 방법 하나만 남겨주세요.</p>
+
+      <form>
+        <input type="text" placeholder="이름 (선택)" />
+        <input type="text" placeholder="전화번호 (선택)" />
+        <input type="email" placeholder="이메일 (선택)" />
+        <input type="text" placeholder="카카오 ID (선택)" />
+        <textarea placeholder="문의 내용 (선택)"></textarea>
+        <label>
+          <input type="checkbox" /> 개인정보 수집 및 이용에 동의합니다.
+        </label>
+        <br/><br/>
+        <button type="button">등록하기</button>
+      </form>
+    </section>
+
+    <footer>
+      © 2026 샘플 아파트 분양 홈페이지
+    </footer>
+
+  </div>
+</body>
+</html>
