@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: jh490811-cmd/Property
+  branch: main
+  base_url: https://decap-auth.netlify.app
+  auth_endpoint: auth
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "complexes"
+    label: "단지 관리"
+    folder: "content/complexes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "단지명", name: "title", widget: "string" }
+      - { label: "한줄 소개", name: "subtitle", widget: "string" }
+      - { label: "대표 이미지", name: "thumbnail", widget: "image" }
+      - { label: "주소", name: "address", widget: "string" }
+      - label: "핵심 포인트"
+        name: "highlights"
+        widget: "list"
+        field: { label: "포인트", name: "item", widget: "string" }
+      - { label: "청약 일정", name: "schedule", widget: "markdown" }
+      - label: "FAQ"
+        name: "faqs"
+        widget: "list"
+        fields:
+          - { label: "질문", name: "q", widget: "string" }
+          - { label: "답변", name: "a", widget: "text" }
+      - { label: "공개", name: "published", widget: "boolean", default: true }
+
+  - name: "posts"
+    label: "공지 / 뉴스"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "제목", name: "title", widget: "string" }
+      - { label: "내용", name: "body", widget: "markdown" }
+      - { label: "공개", name: "published", widget: "boolean", default: true }
